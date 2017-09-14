@@ -46,6 +46,8 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     bindex (0.5.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (9.1.0)
     capybara (2.13.0)
@@ -68,6 +70,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    debug_inspector (0.0.3)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     equalizer (0.0.11)
@@ -87,6 +90,7 @@ GEM
       virtus (>= 1.0.0)
     i18n (0.8.6)
     ice_nine (0.11.2)
+    interception (0.5)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -124,6 +128,12 @@ GEM
       yard (~> 0.9)
     pry-rails (0.3.6)
       pry (>= 0.10.4)
+    pry-rescue (1.4.5)
+      interception (>= 0.5)
+      pry
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     public_suffix (3.0.0)
     puma (3.10.0)
     rack (2.0.3)
@@ -227,6 +237,8 @@ DEPENDENCIES
   pry-byebug
   pry-doc
   pry-rails
+  pry-rescue
+  pry-stack_explorer
   puma (~> 3.7)
   rails (~> 5.1.0)
   sass-rails (~> 5.0)
