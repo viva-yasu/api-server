@@ -30,6 +30,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13.0'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
+  gem 'rubocop'
   gem 'selenium-webdriver'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
