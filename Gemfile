@@ -28,12 +28,31 @@ end
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13.0'
+  gem 'grape_on_rails_routes'
+  gem 'grape-swagger'
+  gem 'grape-swagger-rails'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
   gem 'rubocop'
   gem 'selenium-webdriver'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'factory_girl_rails'
+  gem 'database_rewinder'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+  gem 'json_expressions'
+  gem 'rspec-parameterized'
+  gem 'rspec-rails'
+  gem 'rspec-sidekiq'
+  gem 'spring-commands-rspec'
+  gem 'test-queue'
+  gem 'timecop'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
